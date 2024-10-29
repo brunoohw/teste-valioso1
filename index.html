@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Importando os icones, usados para os botões de mídia social.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Importando o JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Linkando o HTML a outros CSS.-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!--Linkando o head, a um favicon do site.-->
+    <link rel="shortcut icon" href="img/TempoValioso-icon.png">
+    <!--Importando o efeito de revelação de scrolagem das páginas.-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title class="">Tempo Valioso</title>
+    
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+                <a href="index.html">
+                    <img src="img/TempoValioso-logo.png" alt="Imagem de logo, do Tempo Valioso">
+                </a>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="Procastinação/procrastinacao.html">Procrastinação</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="Questionário/questionario.html">Descubra seu nível</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="QuemSomos/quem.html">Quem somos</a>
+                </li>
+            </ul>
+            
+            <div class="social-media-buttons"></div>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Procastinação/procrastinacao.html">Procrastinação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Questionário/questionario.html">Descubra seu nível</a>
+                </li>
+                <li class="nav-item">
+                    <a href="QuemSomos/quem.html">Quem somos</a>
+                </li>
+            </ul>
+
+            <div class="social-media-buttons">
+
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Vencendo a
+                    <span>Procrastinação</span>
+                </h1>
+                <p class="description">
+                    Entregando um norte com uma ótima forma de adquirir bons resultados e tornar seu tempo<span> mais <span>valioso</span>.
+                </p>
+                
+                <div id="cta_buttons">
+                    <a href="Questionário/questionario.html" class="btn-default" >Faça o questionário</a>
+                </div>
+
+                <div class="social-media-buttons">
+
+                    <a class="social-media-item" target="_blank" href="https://www.instagram.com/_tempovalioso/"> 
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="social-media-item" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=suporte.tempovalioso@gmail.com&su=Assunto&body=Mensagem">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--<div id="banner"></div>!-->
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Dicas</h2>
+            <h3 class="section-subtitle">Nossas dicas especiais</h3>
+
+            <div id="dicas">
+                <div class="dica">
+                    <img src="" class="dica-image" alt="">
+                    <h3 class="dica-title">Afinal, o que é a 
+                        <span>Procrastinação?</span>
+                    </h3>
+                    <span class="dica-description">O adiamento de tarefas importantes, causado por falta de motivação ou medo de falhar, levando a estresse e baixa produtividade. Enquanto universal, algumas culturas veem a procrastinação de forma positiva, como uma solução.</span>
+                    <div class="dica-button">
+                        <a href="Procastinação/procrastinacao.html#title1">
+                            <button class="btn-default">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dica">
+                    <!--<img src="" class="dica-image" alt="">!-->
+                    <h3 class="dica-title">Causas 
+                        <span>& </span>Efeitos
+                    </h3>
+                    <span class="dica-description">
+                        A procrastinação afeta pessoas em várias áreas, como escola e trabalho, e pode ter impactos leves ou graves na saúde mental e desempenho.</span>
+                    <div class="dica-button">
+                        <a href="procastinação/procrastinacao.html#title2">
+                            <button class="btn-default">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dica">
+                    <img src="" class="dica-image" alt="">
+                    <h3 class="dica-title">Como
+                        <span>Combater</span>
+                    </h3>
+                    <span class="dica-description">A técnica Pomodoro é um método de gestão de tempo criado em 1988, onde você trabalha por 25 minutos e descansa por 5, repetindo até completar duas horas, seguido por uma pausa maior de 30 minutos. Essa técnica é eficaz para combater a procrastinação, mantendo foco e organização.</span>
+                    <div class="dica-button">
+                        <a href="procastinação/procrastinacao.html#title3">
+                            <button class="btn-default">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <!--<img src="src/img/" id="testimonials_image" alt="">!-->
+            <div id="testimonials_content">
+                <h2 class="section-title">Depoimentos</h2>
+                <h3 class="section-subtitle">O que usuários disseram sobre nós!</h3>
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="img/images.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Mascarado Noturno
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil!"</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="img/images.png" class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Mascarado Noturno
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/wave-footer.svg" alt="">
+        <div id="footer_items">
+            <span id="copyright">&copy 2024 Tempo Valioso</span>
+            <div class="social-media-buttons">
+                <a class="social-media-item" target="_blank" href="https://www.instagram.com/_tempovalioso/"> 
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="social-media-item" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=suporte.tempovalioso@gmail.com&su=Assunto&body=Mensagem">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

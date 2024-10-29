@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#prcao {
+    display: flex;
+    min-height: calc(100vh - 105px);
+    position: relative;
+    width: 65%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--first-blue);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+h1 span {
+    color: var(--first-yellow);
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 100%;
+    font-size: 23px;
+    gap: 40px;
+    margin-top: 5%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border-radius: 20px;
+    gap: 18px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--background-white-2);
+    box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.description .pergunta {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--first-yellow);
+}
+
+.link {
+    align-items: left;
+    text-align: left;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #36c;
+    word-break: break-all;
+}
+
+
+.description .tipos {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--first-blue);
+}
+
+
+iframe {
+    border-radius: 20px;
+} 
+
+@media screen and (max-width: 1170px) {
+    #prcao .title {
+        font-size: 1rem;
+    }
+    #prcao{
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 1170px) {
+    #prcao{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 850) {
+    #title1 {
+        font-size: 4rem;
+    }
+    
+    #title2 {
+        font-size: 2.7rem;
+    }
+    
+    #title3 {
+        font-size: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #title1 {
+        font-size: 2.7rem;
+    }
+    
+    #title2 {
+        font-size: 2.7rem;
+    }
+    
+    #title3 {
+        font-size: 2.7rem;
+    }
+
+    iframe {
+        max-width: 320px;
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #title1 {
+        font-size: 2.6rem;
+    }
+    
+    #title2 {
+        font-size: 2.6rem;
+    }
+    
+    #title3 {
+        font-size: 2.6rem;
+    }
+
+    iframe {
+        max-width: 320px;
+        max-height: 180px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    #title1 {
+        font-size: 2.55rem;
+    }
+    
+    #title2 {
+        font-size: 2.55rem;
+    }
+    
+    #title3 {
+        font-size: 2.55rem;
+    }
+    
+    #texto {
+        font-size: 20px;
+    }
+
+    iframe {
+        max-width: 290px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    #title1 {
+        font-size: 2.55rem;
+    }
+    
+    #title2 {
+        font-size: 2.55rem;
+    }
+    
+    #title3 {
+        font-size: 2.55rem;
+    }
+
+    #texto {
+        font-size: 19px;
+    }
+    
+    iframe {
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    #title1 {
+        font-size: 2.4rem;
+    }
+    
+    #title2 {
+        font-size: 2.4rem;
+    }
+    
+    #title3 {
+        font-size: 2.4rem;
+    }
+
+    iframe {
+        max-width: 275px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    #prcao .title {
+    font-size: 1.8rem;
+    }
+
+    #title1 {
+        font-size: 2.2rem;
+    }
+    
+    #title2 {
+        font-size: 2.2rem;
+    }
+    
+    #title3 {
+        font-size: 2.2rem;
+    }
+
+    #texto {
+        font-size: 18px;
+    }
+    
+    iframe {
+        max-width: 245px;
+        max-height: 185px;
+    }
+
+    .link {
+        font-size: 15px;
+        word-break: break-all;
+    }
+}
+
+

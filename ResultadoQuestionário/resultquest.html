@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="resultquest.css">
+    <!--Importando os icones, usados para os botões de mídia social.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Importando o JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Linkando o HTML a outros CSS.-->
+    <link rel="stylesheet" href="resultquest.css">
+    <link rel="stylesheet" href="../Questionário/qstyles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!--Linkando o head, a um favicon do site.-->
+    <link rel="shortcut icon" href="../img/TempoValioso-icon.png">
+    <!--Importando o efeito de revelação de scrolagem das páginas.-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Resultado do Questionário</title>
+</head>
+<body>
+    
+    <header>
+        <nav id="navbar">
+
+                <a href="../index.html">
+                    <img src="../img/TempoValioso-logo.png" alt="Imagem de logo, do Tempo Valioso">
+                </a>
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="../index.html">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../Procastinação/procrastinacao.html">Procrastinação</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../Questionário/questionario.html">Descubra seu nível</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="../QuemSomos/quem.html">Quem somos</a>
+                </li>
+            </ul>
+
+            <div class="social-media-buttons" id="teste1">
+            </div>
+
+            <button id="mobile-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="../index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Procastinação/procrastinacao.html">Procrastinação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Procastinação/procrastinacao.html">Descubra seu nível</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../QuemSomos/quem.html">Quem somos</a>
+                </li>
+            </ul>
+
+            <div class="social-media-buttons">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="container">	
+        <div class="row">
+            <div class="two-thirds column">
+            <div id="progress_bar"></div>
+                <form class="questions_box">
+                    <h2 class="result-thnks">Obrigado por responder a pesquisa!</h2>
+                    <h1 id="printtotalscore"></h1>
+                    <p id="printscoreinfo"></p>
+                    <p id="printresultquest"></p>
+                    <p id="printresultquest2"></p>
+
+                    <div class="button-log-cad">
+                        <p>Faça novamente o questionário</p>
+                        <a href="../Questionário/questionario.html" class="btn-default"  onclick="limpaLocalStorage()">
+                          Tente Novamente
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!--<script src="../Questionário/qscript.js"></script> -->
+    <script src="../script.js"></script>
+</body>
+</html>

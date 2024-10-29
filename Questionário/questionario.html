@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Importando os icones, usados para os botões de mídia social.-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--Importando o JQUERY-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--Linkando o HTML a outros css.-->
+  <link rel="stylesheet" href="qstyles.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <!--Linkando ao head, um favicon do site.-->
+  <link rel="shortcut icon" href="../img/TempoValioso-icon.png">
+  <!--Importando o efeito de revelação de scrolagem das páginas.-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Descubra seu nível</title>
+</head>
+
+<body>
+
+  <header>
+    <nav id="navbar">
+        <a href="../index.html">
+            <img src="../img/TempoValioso-logo.png" alt="Imagem de logo, do Tempo Valioso">
+        </a>
+        <ul id="nav_list">
+            <li class="nav-item active">
+                <a href="../index.html">Início</a>
+            </li>
+            <li class="nav-item active">
+                <a href="../Procastinação/procrastinacao.html">Procrastinação</a>
+            </li>
+            <li class="nav-item active">
+                <a href="questionario.html">Descubra seu nível</a>
+            </li>
+            <li class="nav-item">
+                <a href="../QuemSomos/quem.html">Quem somos</a>
+            </li>
+        </ul>
+
+        <div class="social-media-buttons" id="teste1">
+        </div>
+
+        <button id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item">
+                <a href="../index.html">Início</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Procastinação/procrastinacao.html">Procrastinação</a>
+            </li>
+            <li class="nav-item">
+                <a href="questionario.html">Descubra seu nível</a>
+            </li>
+            <li class="nav-item">
+                <a href="../QuemSomos/quem.html">Quem somos</a>
+            </li>
+        </ul>
+
+        <div class="social-media-buttons">
+          
+        </div>
+    </div>
+</header>
+
+  <div class="container">	
+    <div class="row">
+  	  <div class="two-thirds column">
+        <div id="progress_bar"></div>
+  	  	<form class="questions_box">
+
+  	  		<div id="question-1">
+            <h2>Questão 1</h2>
+            <h3>Eu adio as coisas e elas acabam não sendo feitas?</h3>
+            <input id="question-1-answer-a" type="radio" name="question-1" value="0" > Não acontece<br>
+            <input id="question-1-answer-b" type="radio" name="question-1" value="1" > Acontece algumas vezes<br>
+            <input id="question-1-answer-c" type="radio" name="question-1" value="2" > Acontece frequentemente<br>
+            <input id="question-1-answer-d" type="radio" name="question-1" value="3" > Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-1-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit1" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+  			 <div id="question-2">
+  				 <h2>Questão 2</h2>
+  				 <h3>Eu invento desculpas para não começar?</h3>
+           <input id="question-2-answer-a" type="radio" name="question-2" value="0"> Não acontece<br>
+  	  		 <input id="question-2-answer-b" type="radio" name="question-2" value="1"> Acontece algumas vezes<br>
+  				 <input id="question-2-answer-c" type="radio" name="question-2" value="2"> Acontece frequentemente<br>
+  				 <input id="question-2-answer-d" type="radio" name="question-2" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+  				 <div id="question-2-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+           <div id="submit2" class="button">Enviar Resposta</div>
+           <div class="clearfix"></div>
+  			 </div>
+  			
+  			 <div id="question-3">	
+  				 <h2>Questão 3</h2>
+  				 <h3>Quando uma tarefas me estressa, eu espero até o ultimo minuto para fazê-la?</h3>
+           <input id="question-3-answer-a" type="radio" name="question-3" value="0"> Não acontece<br>
+  	  		 <input id="question-3-answer-b" type="radio" name="question-3" value="1"> Acontece algumas vezes<br>
+  				 <input id="question-3-answer-c" type="radio" name="question-3" value="2"> Acontece frequentemente<br>
+  				 <input id="question-3-answer-d" type="radio" name="question-3" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+  				 <div id="question-3-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+           <div id="submit3" class="button">Enviar Resposta</div>
+           <div class="clearfix"></div>
+  			 </div>
+
+         <div id="question-4">
+            <h2>Questão 4</h2>
+            <h3>Eu tenho problemas para me organizar?</h3>
+            <input id="question-4-answer-a" type="radio" name="question-4" value="0"> Não acontece<br>
+            <input id="question-4-answer-b" type="radio" name="question-4" value="1"> Acontece algumas vezes<br>
+            <input id="question-4-answer-c" type="radio" name="question-4" value="2"> Acontece frequentemente<br>
+            <input id="question-4-answer-d" type="radio" name="question-4" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-4-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit4" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-5">
+            <h2>Questão 5</h2>
+            <h3>Eu adio tarefas porque não consigo me concertrar?</h3>
+            <input id="question-5-answer-a" type="radio" name="question-5" value="0"> Não acontece<br>
+            <input id="question-5-answer-b" type="radio" name="question-5" value="1"> Acontece algumas vezes<br>
+            <input id="question-5-answer-c" type="radio" name="question-5" value="2"> Acontece frequentemente<br>
+            <input id="question-5-answer-d" type="radio" name="question-5" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-5-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit5" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+          
+          <div id="question-6">
+            <h2>Questão 6</h2>
+            <h3>Eu fico buscando diversão ao invés de trabalhar?</h3>
+            <input id="question-6-answer-a" type="radio" name="question-6" value="0"> Não acontece<br>
+            <input id="question-6-answer-b" type="radio" name="question-6" value="1"> Acontece algumas vezes<br>
+            <input id="question-6-answer-c" type="radio" name="question-6" value="2"> Acontece frequentemente<br>
+            <input id="question-6-answer-d" type="radio" name="question-6" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-6-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit6" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-7">
+            <h2>Questão 7</h2>
+            <h3>É comum que eu faça algo, sabendo que na verdade,
+              deveria estar fazendo outra coisa mais importante?</h3>
+            <input id="question-7-answer-a" type="radio" name="question-7" value="0"> Não acontece<br>
+            <input id="question-7-answer-b" type="radio" name="question-7" value="1"> Acontece algumas vezes<br>
+            <input id="question-7-answer-c" type="radio" name="question-7" value="2"> Acontece frequentemente<br>
+            <input id="question-7-answer-d" type="radio" name="question-7" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-7-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit7" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+          
+          <div id="question-8">
+            <h2>Questão 8</h2>
+            <h3>Eu geralmente me arrependo
+              de não começar minhas tarefas mais cedo?</h3>
+            <input id="question-8-answer-a" type="radio" name="question-8" value="0"> Não acontece<br>
+            <input id="question-8-answer-b" type="radio" name="question-8" value="1"> Acontece algumas vezes<br>
+            <input id="question-8-answer-c" type="radio" name="question-8" value="2"> Acontece frequentemente<br>
+            <input id="question-8-answer-d" type="radio" name="question-8" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-8-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit8" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-9">
+            <h2>Questão 9</h2>
+            <h3>Tenho problemas em entregar minhas tarefas
+              na data correta mesmo quando os prazos são longos?</h3>
+            <input id="question-9-answer-a" type="radio" name="question-9" value="0"> Não acontece<br>
+            <input id="question-9-answer-b" type="radio" name="question-9" value="1"> Acontece algumas vezes<br>
+            <input id="question-9-answer-c" type="radio" name="question-9" value="2"> Acontece frequentemente<br>
+            <input id="question-9-answer-d" type="radio" name="question-9" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-9-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit9" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div id="question-10">
+            <h2>Questão 10</h2>
+            <h3>Eu evito tarefas desagradáveis até que alguém as faça por mim?</h3>
+            <input id="question-10-answer-a" type="radio" name="question-10" value="0"> Não acontece<br>
+            <input id="question-10-answer-b" type="radio" name="question-10" value="1"> Acontece algumas vezes<br>
+            <input id="question-10-answer-c" type="radio" name="question-10" value="2"> Acontece frequentemente<br>
+            <input id="question-10-answer-d" type="radio" name="question-10" value="3"> Acontece com muito mais frequência do que eu gostaria<br>
+            <div id="question-10-error" class="error-message" style="display: none;">Por favor, escolha uma resposta.</div>
+            <div id="submit10" class="button">Enviar Resposta</div>
+            <div class="clearfix"></div>
+          </div>
+
+         <div id="question-11"> 
+           <h2 class="result-thnks">Obrigado por responder a pesquisa!</h2>
+           <h1 class="print-result"></h1>
+           <h1 id="printtotalscore"></h1>
+           <p id="printscoreinfo"></p>
+           <p id="printresultquest"></p>
+           <p id="printresultquest2"></p>
+           
+           <div class="button-log-cad">
+            <p>Faça</p>
+            <a href="../Login/login.html" class="btn-default">
+              Login
+            </a>
+            <p>Ou</p>
+            <a href="../Cadastro/cadastro.html" class="btn-default">
+              Cadastro
+            </a>
+            <p>Para salvar seu resultado!
+            </p>
+          </div>
+          </div>
+  				
+  	  	</form>
+  	  </div>
+  	</div>
+  </div>
+  
+  <footer>
+    <img src="../img/wave-footer.svg" alt="">
+    <div id="footer_items">
+        <span id="copyright">&copy 2024 Tempo Valioso</span>
+        <div class="social-media-buttons">
+          <a class="social-media-item" target="_blank" href="https://www.instagram.com/_tempovalioso/"> 
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="social-media-item" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=suporte.tempovalioso@gmail.com&su=Assunto&body=Mensagem">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="qscript.js"></script>
+</body>
+</html>

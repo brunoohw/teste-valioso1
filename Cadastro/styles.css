@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; /* Faz com que o input ocupe todo o espaço */
+}
+
+button#toggleSenha {
+    position: absolute;
+    right: 25px; /* Espaço da borda direita */
+    top: 40%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta o alinhamento */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Remove o padding para melhor alinhamento */
+    font-size: 16px; /* Ajuste o tamanho do ícone conforme necessário */
+    color: #333; /* Cor do ícone */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#modal {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    width: 550px;
+    max-width: 90vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 200;
+
+    display: none;
+}
+
+#mHeader {
+    background-color: rgb(255, 92, 92);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+#mBody {
+    padding: 10px 20px;
+}
+
+#modal footer {
+    padding: 10px 20px 15px;
+    border-top: 1px solid gray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+
+#modal footer button {
+    float: right;
+    padding: 10px 15px;
+    background-color: rgb(255, 92, 92);
+    color: white;
+    transition: .3s ease;
+}
+
+#modal footer button:hover {
+    color: black;
+}
+
+#modalShadow {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+    z-index: 100;
+
+    display: none;
+}
+
+@keyframes modalIn {
+    from {
+        transform: translate(-50%, -115%);
+    }
+
+    to {
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes modalOut {
+    from {
+        transform: translate(-50%, 0 );
+    }
+
+    to {
+        transform: translate(-50%, -115%);
+    }
+}
+
+@keyframes msIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes msOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+ @media (max-width: 768px) {
+    #modal {
+        width: 70%;
+        top: 10px;
+    }
+
+    #mHeader {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    #mBody, #modal footer {
+        padding: 10px 15px;
+    }
+
+    #modal footer button {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    #modal {
+        width: 85%;
+        top: 5px;
+    }
+
+    #mHeader {
+        padding: 8px;
+        font-size: 20px;
+    }
+
+    #mBody, #modal footer {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+
+    #modal footer button {
+        padding: 6px 12px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+}
